@@ -35,7 +35,7 @@ padding: 5px;
 	padding-bottom: 0px;
 }
 .user-bg-main {
-	background: #0066cc;
+	background: #0f6cc7;
 }
  .user-bg {
 	padding: 10px;
@@ -73,7 +73,7 @@ ul.nav li{
 
 .nav li a.active{
 	color: #0066cc;
-	border-bottom: 3px solid #0066cc;
+	border-bottom: 3px solid #0f6cc7;
 	font-weight: 600;	
 }
 
