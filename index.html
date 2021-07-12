@@ -7,9 +7,12 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="fontawesome/css/all.css">
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  
 </head>
 <body>
 <div class="container-fluid">
@@ -117,6 +120,7 @@ Chennai – 600 044.
 I obtained my Masters from NUIG in Electronics and Computer Engineering. My Master's project was supervised by <a href="https://www.nuigalway.ie/our-research/people/engineering-and-informatics/petercorcoran/" target="_blank" class="link">Dr. Peter Corcoran</a>. Prior to Research, I was an Embedded System Engineer at <a href="https://www.fourcorners.asia/" target="_blank" class="link">Four Corners Technologies</a>, where we developed IoT smart solutions for retails, workspace, kiosks, and outdoor billboards. I was the hardware guy in this firm, where my role in these projects was to design-build and program the wireless embedded system (hardware) of the devices, then connect its data stream to their cloud services. </li>
   </ul>
   </div>
+
   <div class="tab-pane page-section" id="activity">
   <ul class="activity">
   <li><a href="https://stopcorona.tn.gov.in/" target="_blank">https://stopcorona.tn.gov.in/</a></li>
@@ -154,6 +158,15 @@ I obtained my Masters from NUIG in Electronics and Computer Engineering. My Mast
   <div class="row">
   <div class="col-lg-12 col-md-12 col-12">
   <div class="card">
+   <div class="card-header pl-2">
+  <h6 class="card-title mb-0 float-left">Banners</h6> 
+  <a class="link float-right" data-toggle="modal" data-target="#Profile_banners">Reference Image</a>
+  </div>
+  <div class="card-body p-2">
+  Banners did for digital marketing to exposure our product.
+  </div>
+  
+  
   <div class="card-header pl-2">
   <h6 class="card-title mb-0 float-left">Project: Hospital Management Information System, NHM, Tamilnadu, Government</h6> 
   <a class="link float-right" data-toggle="modal" data-target="#Profile_modal_1">Reference Image</a>
@@ -391,6 +404,69 @@ Company Website
 </div>
 </div>
 </section>
+<div class="modal fade" id="Profile_banners" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+        
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <!-- <div class="carousel-item active">
+              <img src="images/slider_1.png" alt="Los Angeles">
+            </div> -->
+            <div class="carousel-item active">
+              <img src="images/banner2.png" alt="HMIS">
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner1.png" alt="Dashboard">
+            </div>
+			<div class="carousel-item">
+              <img src="images/banner3.jpg" alt="Dashboard">
+            </div>
+			<div class="carousel-item">
+              <img src="images/banner4.jpg" alt="Image">
+            </div>
+			<div class="carousel-item">
+              <img src="images/banner5.jpg" alt="Image">
+            </div>
+			<div class="carousel-item">
+              <img src="images/banner6.png" alt="Image">
+            </div>
+			<div class="carousel-item">
+              <img src="images/banner7.png" alt="Image">
+            </div>
+            <!-- <div class="carousel-item">
+              <iframe width="766" height="495" src="https://www.youtube.com/embed/UFzEJwC6Zjw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="Profile_modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -625,5 +701,22 @@ Company Website
     </div>
   </div>
 </div>
+<script>
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+    
+</script>
 </body>
 </html>
